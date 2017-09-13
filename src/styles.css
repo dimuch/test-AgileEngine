@@ -1,0 +1,8 @@
+a:hover{
+    cursor: pointer;
+}
+
+.navbar-brand.ae-brand:hover,
+.navbar-brand.ae-brand:focus{
+    color: #9d9d9d !important;
+}

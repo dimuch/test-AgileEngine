@@ -1,0 +1,85 @@
+<div class='panel panel-primary' *ngIf='user'>
+    <div class='panel-heading'>
+        {{pageTitle + ': ' + user.name}}
+    </div>
+
+    <div class='panel-body'>
+        <div class='row'>
+            <div class='col-md-6'>
+                <div class='row'>
+                    <div class='col-md-3'>id:</div>
+                    <div class='col-md-6'>{{user.id}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3'>Name:</div>
+                    <div class='col-md-6'>{{user.name}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3'>User Name:</div>
+                    <div class='col-md-6'>{{user.username}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3'>Email:</div>
+                    <div class='col-md-6'>{{user.email}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-12'>Company:
+                      <div class='row'>
+                        <div class='col-md-3'>Company Name:</div>
+                        <div class='col-md-6'>{{user.company.name}}</div>
+                      </div>
+                      <div class='row'>
+                        <div class='col-md-3'>Company Key Phrases:</div>
+                        <div class='col-md-6'>{{user.company.catchPhrase}}</div>
+                      </div>
+                      <div class='row'>
+                        <div class='col-md-3'>Company BS:</div>
+                        <div class='col-md-6'>{{user.company.bs}}</div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class='col-md-6'>
+                <div class='row'>
+                    <div class='col-md-12'>Address:
+                      <div class='row'>
+                        <div class='col-md-3'>Street:</div>
+                        <div class='col-md-6'>{{user.address.street}}</div>
+                      </div>
+                      <div class='row'>
+                        <div class='col-md-3'>Suite:</div>
+                        <div class='col-md-6'>{{user.address.suite}}</div>
+                      </div>
+                      <div class='row'>
+                        <div class='col-md-3'>City:</div>
+                        <div class='col-md-6'>{{user.address.city}}</div>
+                      </div>
+                      <div class='row'>
+                        <div class='col-md-3'>ZipCode:</div>
+                        <div class='col-md-6'>{{user.address.zipcode}}</div>
+                      </div>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3'>Phone:</div>
+                    <div class='col-md-6'>{{user.phone}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3'>Website:</div>
+                    <div class='col-md-6'>{{user.website}}</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class='panel-footer'>
+        <a class='btn btn-default' (click)='onBack()' style='width:80px'>
+            <i class='glyphicon glyphicon-chevron-left'></i> Back
+        </a>
+        <a class='btn btn-primary'
+           [routerLink]="['/users', user.id, 'edit']">
+            <i class='glyphicon glyphicon-pencil' style="margin-right: 10px;"></i> Edit User Details
+        </a>
+    </div>
+</div>

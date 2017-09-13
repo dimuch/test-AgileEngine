@@ -1,0 +1,14 @@
+<div>
+  <nav class='navbar navbar-inverse'>
+      <div class='container-fluid'>
+          <div class='navbar-brand ae-brand'>{{pageTitle}}</div>
+          <ul class='nav navbar-nav'>
+              <li><a [routerLink]="['/welcome']">Home</a></li>
+              <li><a [routerLink]="['/users']">Users List</a></li>
+          </ul>
+      </div>
+  </nav>
+  <div class='container'>
+      <router-outlet></router-outlet>
+  </div>
+</div>

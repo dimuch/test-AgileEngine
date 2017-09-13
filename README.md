@@ -1,6 +1,3 @@
-# test-AgileEngine
-test task Egile Engine Company
-
 1) Open a command prompt in the project's root directory
 
 2) Type: `npm install`
