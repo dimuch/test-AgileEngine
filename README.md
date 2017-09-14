@@ -5,3 +5,6 @@
     
 3) Type: `npm start` to lunch app
 
+Does not implemented:
+1.Data Caching after all items fetched.
+2.Resolve functionality for big data valume.
