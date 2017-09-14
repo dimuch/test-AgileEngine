@@ -7,4 +7,4 @@
 
 Does not implemented:<br>
 1.Data Caching after all items fetched.<br>
-2.Resolve functionality for big data valume.<br>
+2.Resolve functionality for big data volume.<br>
